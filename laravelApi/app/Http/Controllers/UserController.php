@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     function register(Request $request){
 
-        $data = User::create($request->all());
-        return response()->json($data);
+        $result = User::create($request->all());
+        return response()->json($result);
     }
 }
